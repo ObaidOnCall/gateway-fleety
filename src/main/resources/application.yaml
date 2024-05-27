@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: fleety
+        uri: https://fleety.plutus.ma
+        predicates:
+        - Path=/**
+
+
+server:
+    port: 8888
